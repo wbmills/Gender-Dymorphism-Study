@@ -1,0 +1,6 @@
+index,questionText,options,layout,type,questionWidth,responseWidth
+0,Demographics,,,heading,,
+gender,What gender do you identify with?,"Female, Male, Other",vert,radio,0.3,0.7
+age,What is your age?,,horiz,text,0.3,0.7
+english,Are you fluent in English?,"Yes - as a first language,Yes - as a second language,No",vert,radio,0.3,0.7
+handedness,Are you left or right handed?,"Left,Right",vert,radio,0.3,0.7

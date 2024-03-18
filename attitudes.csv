@@ -1,0 +1,6 @@
+index,questionText,options,layout,type,questionWidth,responseWidth
+locationUpbringing,"Were you raised in an urban area, rural area, or both?","Urban,Rural,Both",vert,radio,0.3,0.7
+pronounImportance,How important do you think that it is to use the gender pronoun that an individual identifies by?,"Very Important,Important,Neither Important nor Not important,Uninmportant,Not Unimportant",vert,radio,0.3,0.7
+pronounVisual,How easy do you find it to use a gender pronoun that an individual identifies by if they visually appear different?,"Very Important,Important,Neither Important nor Not important,Uninmportant,Not Unimportant",vert,radio,0.3,0.7
+pronounAddress,How easy do you find it to use non-binary gender pronouns (they/them) when addressing an individual?,"Very Important,Important,Neither Important nor Not important,Uninmportant,Not Unimportant",vert,radio,0.3,0.7
+pronounAnxiety,How anxious would you feel if you got someone's pronoun wrong when addressing them?,"Severely anxious,Moderately anxious,Mildly anxious,No anxiety/Neutral",vert,radio,0.3,0.7

@@ -1,0 +1,19 @@
+index,questionText,options,layout,type,questionWidth,responseWidth
+0,Consent Form,,,heading,,
+0,GENDER STROOP EXPERIMENT (Ethics Ref.: 14493),,,heading,,
+0,"If you have any questions, please email s.j.hinde@bristol.ac.uk",,,description,,
+0,Please confirm that you:,,,description,,
+vision,Have normal or corrected to normal vision using prescription glasses or contacts,"Yes,No",vert,radio,0.7,0.3
+0,Please confirm that you:,,,description,,
+explain,Been given information explaining about the study?,"Yes,No",vert,radio,0.7,0.3
+ask,"Had an opportunity to ask questions and discuss this study, and received satisfactory answers to all of the questions you asked?","Yes,No",vert,radio,0.7,0.3
+info,Received enough information about the study for you to make a decision about participation?,"Yes,No",vert,radio,0.7,0.3
+0,DO YOU UNDERSTAND THAT YOU MAY:,,,description,,
+info,"Withdraw from the study at any time without having to give a reason, and without your medical or legal rights being affected?","Yes,No",vert,radio,0.7,0.3
+0,I hereby fully and freely consent to my participation in this study,,,heading,,
+0,I understand the nature and purpose of the procedures involved in this study. These have been communicated to me on the information sheet accompanying this form [Version 1.0: 8th March 2023],,,description,,
+0,"I understand and acknowledge that the investigation is designed to promote scientific knowledge. I understand that personal information collected during the study may be looked at by individuals from the University of Bristol, regulatory authorities or the funding body of the above study.  I give permission for these individuals to have access to personal information under conditions of confidentiality.",,,description,,
+0,I understand that the anonymised study data collected from me as part of the study will be made available as “open data”. ,,,description,,
+0,I understand that the anonymised study data collected for this study may be used in future research projects but that the conditions on this form under which I have provided the data will still apply.,,,description,,
+conformation,Check to agree:,Agree,vert,check,0.7,0.3
+pavloviaID,Enter your assigned participant ID from Pavlovia:[required],,vert,text,0.7,0.3

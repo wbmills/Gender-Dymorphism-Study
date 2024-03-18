@@ -1,0 +1,184 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+<script type="text/javascript">
+	function getUrlVars() {
+		var vars = {};
+		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+		vars[key] = value;
+		});
+		return vars;
+	}
+	function getUrlParam(parameter, defaultvalue){
+		var urlparameter = defaultvalue;
+		if(window.location.href.indexOf(parameter) > -1){
+        	urlparameter = getUrlVars()[parameter];
+	        }
+		return urlparameter;
+	}
+	var xRes = parseInt(getUrlParam('xRes','30'));
+	var yRes = parseInt(getUrlParam('yRes','30'));
+
+    if ((parseInt(screen.width) < parseInt(screen.height))) {
+        xRes = (screen.width * 3);
+        yRes = Math.round(screen.height * 0.09);
+    } else {
+        xRes = Math.round(screen.width * 0.75); 
+        yRes = Math.round(screen.height * 0.03);
+    }
+
+</script>
+<style type="text/css">
+<!--
+    body {background-color: #333333;}
+    table {
+    border-collapse:collapse;
+    }
+    .heading {text-align: left;
+        color: ;
+    }
+    .description {text-align: left;
+        color: ;
+    }
+    .radioItem {text-align: left;
+        color: ;
+    }
+    .radioResponse {text-align: left;
+        color: ;
+    }
+    .choiceItem {text-align: left;
+        color: ;
+    }
+    .choiceResponse {text-align: left;
+        color: ;
+        font-size: var(--yRes)px;
+    }
+    .textItem {text-align: left;
+        color: ;
+    }
+    .textResponse {text-align: left;
+        color: ;
+        font-size: var(--yRes)px;
+    }
+    .sliderItem {text-align: left;
+        color: ;
+    }
+	.style1 {font-size: var(--yRes)px}
+	.style3 {background-color: #333333;}
+	.style2 {text-align: left}
+	.style4 {text-align: left;
+	background-color: #333333;}
+	input[type=radio] { 
+        	width: 35px; 
+		height: 35px; 
+	} 
+	input[type=checkbox] { 
+        	width: 35px; 
+		height: 35px; 
+	} 
+	.button {
+		background-color: #4CAF50;
+		border: none;
+		color: white;
+		padding: 20px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: var(--yRes)px;
+		margin: 4px 2px;
+		border-radius: 12px;
+	}
+	.verticalTableHeader {
+        text-align:left;
+        white-space:nowrap;
+        g-origin:50% 50%;
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+    .verticalTableHeader p {
+        margin:0 -100% ;
+        display:inline-block;
+    }
+    .verticalTableHeader p:before{
+        content:'';
+        width:0;
+        padding-top:110%;/* takes width as reference, + 10% for faking some extra padding */
+        display:inline-block;
+        vertical-align:middle;
+    }
+    table {
+        text-align:center;
+        table-layout : fixed;
+        margin-left:auto;
+        margin-right:auto;
+        border: 0;
+        width: 80%;
+    }
+    td {
+        padding: 20px;
+    }
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #f3f3f3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+-->
+</style>
+</head>
+<body id="bodyForm">
+	<script>
+		document.getElementById('bodyForm').style = "width: " + xRes + "px; font-family: Arial, Helvetica, sans-serif; justify-content: left;  overflow-x: hidden; overflow-y: hidden; color: white; font-size: "+ yRes +"px";
+		
+	</script>
+	<form name="form1" method="post" action="">  <table>
+  </table>
+<table>
+<tr><td valign="top" class="radioItem" width="30%">Were you raised in an urban area, rural area, or both?</td></td><td class="radioResponse"><input type="radio" name="QlocationUpbringing" value="1"> Urban <br><input type="radio" name="QlocationUpbringing" value="2"> Rural <br><input type="radio" name="QlocationUpbringing" value="3"> Both <br></td></tr>
+<tr><td valign="top" class="radioItem" width="30%">How important do you think that it is to use the gender pronoun that an individual identifies by?</td></td><td class="radioResponse"><input type="radio" name="QpronounImportance" value="1"> Very Important <br><input type="radio" name="QpronounImportance" value="2"> Important <br><input type="radio" name="QpronounImportance" value="3"> Neither Important nor Not important <br><input type="radio" name="QpronounImportance" value="4"> Uninmportant <br><input type="radio" name="QpronounImportance" value="5"> Not Unimportant <br></td></tr>
+<tr><td valign="top" class="radioItem" width="30%">How easy do you find it to use a gender pronoun that an individual identifies by if they visually appear different?</td></td><td class="radioResponse"><input type="radio" name="QpronounVisual" value="1"> Very easy <br><input type="radio" name="QpronounVisual" value="2"> Easy <br><input type="radio" name="QpronounVisual" value="3"> Neither easy nor hard <br><input type="radio" name="QpronounVisual" value="4"> Hard <br><input type="radio" name="QpronounVisual" value="5"> Very hard <br></td></tr>
+<tr><td valign="top" class="radioItem" width="30%">How easy do you find it to use non-binary gender pronouns (they/them) when addressing an individual?</td></td><td class="radioResponse"><input type="radio" name="QpronounAddress" value="1"> Very easy <br><input type="radio" name="QpronounAddress" value="2"> Easy <br><input type="radio" name="QpronounAddress" value="3"> Neither easy nor hard <br><input type="radio" name="QpronounAddress" value="4"> Hard <br><input type="radio" name="QpronounAddress" value="5"> Very hard <br></td></tr>
+<tr><td valign="top" class="radioItem" width="30%">How anxious would you feel if you got someone's pronoun wrong when addressing them?</td></td><td class="radioResponse"><input type="radio" name="QpronounAnxiety" value="1"> Severely anxious <br><input type="radio" name="QpronounAnxiety" value="2"> Moderately anxious <br><input type="radio" name="QpronounAnxiety" value="3"> Mildly anxious <br><input type="radio" name="QpronounAnxiety" value="4"> Almost no anxiety <br><input type="radio" name="QpronounAnxiety" value="5"> Neutral <br></td></tr></table>
+<table></tr> 			<tr>
+				<td>&nbsp;</td><td style="text-align:center"><input type="submit" name="Submit" value="Submit"  class="button"></td>
+			</tr>
+
+ </table>
+</body>
+</html>
